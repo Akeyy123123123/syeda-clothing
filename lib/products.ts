@@ -2,6 +2,26 @@ import { Product, Review } from './types';
 
 const img = (label: string, w = 600, h = 800) =>
   `https://placehold.co/${w}x${h}/171512/c9a24b?text=${encodeURIComponent(label)}&font=playfair-display`;
+const productImages = [
+  "/images/03128a450f7513e4201190c55b4f6b3b.jpg",
+  "/images/0873993090d1d84b327978e5bcd7910b.jpg",
+  "/images/0ba1ec382dc3b41464cb2c819dc7a16f.jpg",
+  "/images/0d78c4dc58fe5c6ece5d4e87f08b7729.jpg",
+  "/images/13fc67d630058a29fe2faaddfb7b4079.jpg",
+  "/images/21347ac2416fa863ae7c5b1e18178905.jpg",
+  "/images/28d25e8aea79c70d6b2a30df12ca7293.jpg",
+  "/images/3830978dc02025894e3b9cf226b19341.jpg",
+  "/images/497a6c1d60428e28e140a748ce5ff328.jpg",
+  "/images/69f49c9ecc0dc02959214b0b07532a66.jpg",
+  "/images/7d550944c60295f271129ab695bdd89b.jpg",
+  "/images/IMG-20251227-WA0022.jpg",
+  "/images/IMG_20260708_235330.jpg",
+  "/images/IMG_20260708_235353.jpg",
+  "/images/cce8b5c6a719b0c1c9048d9d2607ab7c.jpg",
+  "/images/cd1178f0ca5e2b41e180d7db74b4ff99.jpg",
+  "/images/d0a5fa545875fff3834430d646b4b26a.jpg",
+  "/images/dec3e3000265e46cb12ca9b4dc3679cb.jpg",
+];
 
 export const categories = [
   { name: 'Lawn Collection', slug: 'lawn-collection', tagline: 'Breathable elegance for every day', image: img('Lawn Collection', 800, 1000) },
@@ -42,8 +62,8 @@ export const products: Product[] = names.map((name, i) => {
     oldPrice: hasDiscount ? base : undefined,
     rating: Math.round((3.5 + seededRandom(i * 3 + 2) * 1.5) * 10) / 10,
     reviewsCount: 8 + Math.floor(seededRandom(i * 5 + 1) * 220),
-    image: img(name, 700, 900),
-    images: [img(name, 700, 900), img(name + ' 2', 700, 900), img(name + ' 3', 700, 900)],
+    image: productImages[i],
+images: [productImages[i]],
     colors: ['#0a0a0a', '#c9a24b', '#e8e1d3', '#7a1f2b'].slice(0, 2 + (i % 3)),
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
     inStock: i % 7 !== 0,
