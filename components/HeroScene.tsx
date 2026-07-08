@@ -81,8 +81,8 @@ function ScrollCamera() {
     camera.position.z = 6 - s * 2.2;
     camera.position.y = 0.2 + s * 1.4;
     camera.rotation.x = -s * 0.12;
-    camera.fov = 45 + s * 6;
-    camera.updateProjectionMatrix();
+    (camera as THREE.PerspectiveCamera).fov = 45 + s * 6;
+(camera as THREE.PerspectiveCamera).updateProjectionMatrix();
   });
 
   return null;
