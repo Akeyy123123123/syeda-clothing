@@ -24,15 +24,15 @@ const productImages = [
 ];
 
 export const categories = [
-  { name: 'Lawn Collection', slug: 'lawn-collection', tagline: 'Breathable elegance for every day', image: img('Lawn Collection', 800, 1000) },
-  { name: 'Pret Wear', slug: 'pret-wear', tagline: 'Ready-to-wear refinement', image: img('Pret Wear', 800, 1000) },
-  { name: 'Luxury Formals', slug: 'luxury-formals', tagline: 'Statement pieces for grand occasions', image: img('Luxury Formals', 800, 1000) },
-  { name: 'Abayas', slug: 'abayas', tagline: 'Modest silhouettes, timeless grace', image: img('Abayas', 800, 1000) },
-  { name: 'Casual Wear', slug: 'casual-wear', tagline: 'Effortless everyday luxury', image: img('Casual Wear', 800, 1000) },
-  { name: 'Party Wear', slug: 'party-wear', tagline: 'Dazzling looks for the night', image: img('Party Wear', 800, 1000) },
-  { name: 'Eid Collection', slug: 'eid-collection', tagline: 'Celebration dressed in gold', image: img('Eid Collection', 800, 1000) },
-  { name: 'Summer Collection', slug: 'summer-collection', tagline: 'Light fabrics, radiant hues', image: img('Summer Collection', 800, 1000) },
-  { name: 'Winter Collection', slug: 'winter-collection', tagline: 'Rich textures for cooler days', image: img('Winter Collection', 800, 1000) },
+  { name: 'Lawn Collection', slug: 'lawn-collection', tagline: 'Breathable elegance for every day', image: productImages[0] },
+  { name: 'Pret Wear', slug: 'pret-wear', tagline: 'Ready-to-wear refinement', image: productImages[1] },
+  { name: 'Luxury Formals', slug: 'luxury-formals', tagline: 'Statement pieces for grand occasions', image: productImages[2] },
+  { name: 'Abayas', slug: 'abayas', tagline: 'Modest silhouettes, timeless grace', image: productImages[3] },
+  { name: 'Casual Wear', slug: 'casual-wear', tagline: 'Effortless everyday luxury', image: productImages[4] },
+  { name: 'Party Wear', slug: 'party-wear', tagline: 'Dazzling looks for the night', image: productImages[5] },
+  { name: 'Eid Collection', slug: 'eid-collection', tagline: 'Celebration dressed in gold', image: productImages[6] },
+  { name: 'Summer Collection', slug: 'summer-collection', tagline: 'Light fabrics, radiant hues', image: productImages[7] },
+  { name: 'Winter Collection', slug: 'winter-collection', tagline: 'Rich textures for cooler days', image: productImages[8] },
 ];
 
 const names = [
